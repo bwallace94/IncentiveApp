@@ -7,21 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8522A67D8F5454EBC4FA2F1D /* Pods_IncentiveApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C5F46725CB31E4591C381E4 /* Pods_IncentiveApp.framework */; };
 		C950671B1EFA3795003FB1F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C950671A1EFA3795003FB1F8 /* AppDelegate.swift */; };
-		C950671D1EFA3795003FB1F8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C950671C1EFA3795003FB1F8 /* ViewController.swift */; };
 		C95067201EFA3795003FB1F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C950671E1EFA3795003FB1F8 /* Main.storyboard */; };
 		C95067221EFA3795003FB1F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C95067211EFA3795003FB1F8 /* Assets.xcassets */; };
 		C95067251EFA3795003FB1F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C95067231EFA3795003FB1F8 /* LaunchScreen.storyboard */; };
+		C9C38E651F072D42002A42EF /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C38E641F072D42002A42EF /* Constants.swift */; };
+		C9E340A01F073F33006D4C50 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E3409F1F073F33006D4C50 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0F6468D2D370F22B4198C53B /* Pods-IncentiveApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IncentiveApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IncentiveApp/Pods-IncentiveApp.debug.xcconfig"; sourceTree = "<group>"; };
+		30FCC27A5F8CE33FC4A2ED12 /* Pods-IncentiveApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IncentiveApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-IncentiveApp/Pods-IncentiveApp.release.xcconfig"; sourceTree = "<group>"; };
+		4C5F46725CB31E4591C381E4 /* Pods_IncentiveApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IncentiveApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C95067171EFA3795003FB1F8 /* IncentiveApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IncentiveApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C950671A1EFA3795003FB1F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C950671C1EFA3795003FB1F8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C950671F1EFA3795003FB1F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C95067211EFA3795003FB1F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C95067241EFA3795003FB1F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C95067261EFA3795003FB1F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9C38E641F072D42002A42EF /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		C9E3409F1F073F33006D4C50 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8522A67D8F5454EBC4FA2F1D /* Pods_IncentiveApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0047318FBF0AFC26F86278AB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0F6468D2D370F22B4198C53B /* Pods-IncentiveApp.debug.xcconfig */,
+				30FCC27A5F8CE33FC4A2ED12 /* Pods-IncentiveApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		ABEF7B317002039160A56520 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4C5F46725CB31E4591C381E4 /* Pods_IncentiveApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C950670E1EFA3795003FB1F8 = {
 			isa = PBXGroup;
 			children = (
 				C95067191EFA3795003FB1F8 /* IncentiveApp */,
 				C95067181EFA3795003FB1F8 /* Products */,
+				0047318FBF0AFC26F86278AB /* Pods */,
+				ABEF7B317002039160A56520 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +80,55 @@
 		C95067191EFA3795003FB1F8 /* IncentiveApp */ = {
 			isa = PBXGroup;
 			children = (
+				C9E3409E1F073ECF006D4C50 /* Components */,
+				C9C38E631F072D1A002A42EF /* API */,
+				C9C38E621F072CCC002A42EF /* Views */,
+				C9C38E611F072CC4002A42EF /* Models */,
+				C9C38E601F072CBA002A42EF /* View Controllers */,
 				C950671A1EFA3795003FB1F8 /* AppDelegate.swift */,
-				C950671C1EFA3795003FB1F8 /* ViewController.swift */,
 				C950671E1EFA3795003FB1F8 /* Main.storyboard */,
 				C95067211EFA3795003FB1F8 /* Assets.xcassets */,
 				C95067231EFA3795003FB1F8 /* LaunchScreen.storyboard */,
 				C95067261EFA3795003FB1F8 /* Info.plist */,
 			);
 			path = IncentiveApp;
+			sourceTree = "<group>";
+		};
+		C9C38E601F072CBA002A42EF /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C9E3409F1F073F33006D4C50 /* LoginViewController.swift */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		C9C38E611F072CC4002A42EF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		C9C38E621F072CCC002A42EF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		C9C38E631F072D1A002A42EF /* API */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = API;
+			sourceTree = "<group>";
+		};
+		C9E3409E1F073ECF006D4C50 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				C9C38E641F072D42002A42EF /* Constants.swift */,
+			);
+			name = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +138,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C95067291EFA3795003FB1F8 /* Build configuration list for PBXNativeTarget "IncentiveApp" */;
 			buildPhases = (
+				C4CC53C49FBEC8B57ABD87B2 /* [CP] Check Pods Manifest.lock */,
 				C95067131EFA3795003FB1F8 /* Sources */,
 				C95067141EFA3795003FB1F8 /* Frameworks */,
 				C95067151EFA3795003FB1F8 /* Resources */,
+				FC3317BEE43E32F459AC0DBC /* [CP] Embed Pods Frameworks */,
+				00DA422EBD0BC3231F41AEC7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -132,13 +202,62 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		00DA422EBD0BC3231F41AEC7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IncentiveApp/Pods-IncentiveApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C4CC53C49FBEC8B57ABD87B2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FC3317BEE43E32F459AC0DBC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IncentiveApp/Pods-IncentiveApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C95067131EFA3795003FB1F8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C950671D1EFA3795003FB1F8 /* ViewController.swift in Sources */,
+				C9E340A01F073F33006D4C50 /* LoginViewController.swift in Sources */,
 				C950671B1EFA3795003FB1F8 /* AppDelegate.swift in Sources */,
+				C9C38E651F072D42002A42EF /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,6 +378,7 @@
 		};
 		C950672A1EFA3795003FB1F8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F6468D2D370F22B4198C53B /* Pods-IncentiveApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = D4PT88369P;
@@ -272,6 +392,7 @@
 		};
 		C950672B1EFA3795003FB1F8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 30FCC27A5F8CE33FC4A2ED12 /* Pods-IncentiveApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = D4PT88369P;
@@ -302,6 +423,7 @@
 				C950672B1EFA3795003FB1F8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
